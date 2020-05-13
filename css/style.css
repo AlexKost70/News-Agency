@@ -1,0 +1,28 @@
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header-first-line {
+    min-height: 55px;
+    width: 100%;
+    background-color: #00122f;
+    color: #ffffff;
+}
+
+.header-first-line .text {
+    float: left;
+}
+
+.header-first-line .date {
+    float: right;
+}
+
+.header-first-line a {
+    color: #ffffff;
+}
