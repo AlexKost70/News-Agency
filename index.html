@@ -8,26 +8,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-first-line">
+        <div class="header-first-line clearfix">
             <div class="wrapper">
                 <p class="text">Самые <a href="#">свежие новости</a> в реальном времени</p>
                 <p class="date">12:30 19.06.2019</p>
             </div>
         </div>
-        <div class="header-second-line">
+        <div class="header-second-line clearfix">
             <div class="wrapper">
-                <div class="logo">
-                    <img src="img/logo.png" alt="Логотип">
-                    <h1>Новостное<br>агентство</h1>
+                <div class="logo-location-wrapper">
+                    <img src="img/logo.png" alt="Логотип" class="logo">
+                    <select class="location">
+                        <option name="moscow">Москва</option>
+                        <option mame="spb">Санкт-Петербург</option>
+                    </select>
                 </div>
-                <details class="location">
-                    <summary>Москва</summary>
-                    <p>Санкт-Петербург</p>
-                </details>
-                <div class="weather">
-                    +22 &#8451;
+                <div class="weather-search-wrapper">
+                    <div class="weather">
+                        +22 &#8451;
+                    </div>
+                    <input type="search" placeholder="Поиск по сайту" class="search">
                 </div>
-                <input type="search" placeholder="Поиск по сайту">
                 <nav class="nav categories-nav">
                     <a href="#">Главная</a>
                     <a href="#">Политика</a>
@@ -42,5 +43,164 @@
             </div>
         </div>
     </header>
+    <main class="main">
+        <div class="wrapper clearfix">
+            <section class="sidebar">
+                <h1>Новости дня</h1>
+                <div class="card">
+                    <a class="news-title" href="#">
+                        Кот Ахилл предсказал
+                        победу российской сборной
+                        над Египтом на ЧМ-2018
+                    </a>
+                    <div class="card-footer">
+                        <a class="category" href="#">ЧМ по футболу</a>
+                        <p class="time">10:48</p>
+                        <p class="comments">15</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a class="news-title" href="#">
+                        «Нафтогаз»: суд разрешил
+                        заморозить активы «Газпрома»
+                        в Великобритании
+                    </a>
+                    <div class="card-footer">
+                        <a class="category" href="#">Политика</a>
+                        <p class="time">10:48</p>
+                        <p class="comments">15</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a class="news-title" href="#">
+                        Минтранс предписал
+                        оборудовать общественный
+                        транспорт кондиционерами
+                    </a>
+                    <div class="card-footer">
+                        <a class="category">Транспорт</a>
+                        <p class="time">10:48</p>
+                        <p class="comments">15</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a class="news-title" href="#">
+                        Летние кафе Москвы
+                        временно закроются из-за
+                        непогоды
+                    </a>
+                    <div class="card-footer">
+                        <a class="category" href="#">Погода</a>
+                        <p class="time">10:48</p>
+                        <p class="comments">15</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a class="news-title" href="#">
+                        Комплексное благоустройство
+                        Щелковского шоссе завершится
+                        в июне
+                    </a>
+                    <div class="card-footer">
+                        <a class="category" href="#">Транспорт</a>
+                        <p class="time">10:48</p>
+                        <p class="comments">15</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a class="news-title" href="#">
+                        В Москве назвали самое
+                        популярное мороженое
+                        у болельщиков ЧМ-2018
+                    </a>
+                    <div class="card-footer">
+                        <a class="category" href="#">ЧМ по футболу</a>
+                        <p class="time">10:48</p>
+                        <p class="comments">15</p>
+                    </div>
+                </div>
+                <a class="button button-news" href="#">Все новости</a>
+            </section>
+            <section class="big-card big-card-first">
+                <div class="card">
+                    <a class="category" href="#">Политика</p>
+                    <a class="news-title" href="#">
+                        В Крыму отреагировали
+                        на слова Кравчука
+                        о возврате полуострова
+                    </a><br>
+                    <p class="date">19 июня 2018</p>
+                    <p class="time">10:48</p>
+                </div>
+            </section>
+            <aside class="banner banner-first">
+                <img src="img/banner-1.png">
+            </aside>
+            <section class="small-card small-card-first">
+                <img src="./img/photo-1.jpg" alt="Фото к новости">
+                <a href="#" class="card-title">
+                    Алексей Навальный объявил
+                    акцию против пенсионной
+                    реформы 1 июля
+                </a>
+                <a href="#" class="category">Политика</a>
+                <p class="time">10:48</p>
+                <p class="comments">15</p>
+            </section>
+            <section class="small-card small-card-second">
+                <img src="./img/photo-2.jpg" alt="Фото к новости">
+                <a href="#" class="card-title">
+                    Дума увеличила пошлины
+                    за выдачу загранпаспортов
+                    и водительских прав
+                </p>
+                <a href="#" class="category">Общество</a>
+                <p class="time">12:33</p>
+                <p class="comments">36</p>
+            </section>
+            <aside class="banner banner-second">
+                <img src="img/banner-2.png">
+            </aside>
+            <section class="small-card small-card-fourth">
+                <img src="./img/photo-3.jpg" alt="Фото к новости">
+                <a href="#" class="card-title">
+                    В России заработал
+                    стриминговый сервис
+                    YouTube
+                </a>
+                <a href="#" class="category">Интернет</a>
+                <p class="time">11:17</p>
+                <p class="comments">10</p>
+            </section>
+            <section class="small-card small-card-third">
+                <img src="./img/photo-4.jpg" alt="Фото к новости">
+                <a href="#" class="card-title">
+                    Кейн признан лучшим
+                    игроком матча ЧМ-2018
+                    Тунис — Англия
+                </a>
+                <a href="#" class="category">Политика</a>
+                <p class="time">11:39</p>
+                <p class="comments">25</p>
+            </section>
+            <section class="big-card big-card-second">
+                <div class="card">
+                    <a class="category" href="#">Политика</p>
+                    <a class="news-title" href="#">
+                        Пекин обвинил Вашингтон
+                        развязывании торговой войны
+                    </a><br>
+                    <p class="date">19 июня 2018</p>
+                    <p class="time">10:48</p>
+                    <p class="description">
+                        Министерство коммерции Китая заявило, что Пекин примет «качественные»
+                        и «количественные» меры, если президент США Дональд Трамп введет
+                        дополнительные пошлины на китайские товары
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
 </body>
 </html>
