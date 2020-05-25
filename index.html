@@ -16,11 +16,29 @@
         </div>
         <div class="header-second-line clearfix">
             <div class="wrapper">
+                <div class="mobile-menu-nav-wrapper">
+                    <input type="checkbox" />
+                    <span class="menu-hamburger"></span>
+                    <span class="menu-hamburger"></span>
+                    <span class="menu-hamburger"></span>
+                    <nav class="mobile-menu-nav">
+                        <a href="#">Главная</a>
+                        <a href="#">Политика</a>
+                        <a href="#">Общество</a>
+                        <a href="#">Экономика</a>
+                        <a href="#">В мире</a>
+                        <a href="#">Происшествия</a>
+                        <a href="#">Спорт</a>
+                        <a href="#">Наука</a>
+                        <a href="#">Туризм</a>
+                    </nav>
+                </div>
                 <div class="logo-location-wrapper">
                     <img src="img/logo.png" alt="Логотип" class="logo">
                     <select class="location">
-                        <option name="moscow">Москва</option>
-                        <option mame="spb">Санкт-Петербург</option>
+                        <option id="moscow">Москва</option>
+                        <option id="spb">СПБ</option>
+                        <option id="ekt">ЕКБ</option>
                     </select>
                 </div>
                 <div class="weather-search-wrapper">
@@ -46,7 +64,7 @@
     <main class="main">
         <div class="wrapper clearfix">
             <section class="sidebar">
-                <h1>Новости дня</h1>
+                <h1 class="block-title">Новости дня</h1>
                 <div class="card">
                     <a class="news-title" href="#">
                         Кот Ахилл предсказал
@@ -123,7 +141,7 @@
             </section>
             <section class="big-card big-card-first">
                 <div class="card">
-                    <a class="category" href="#">Политика</p>
+                    <a class="category" href="#">Политика</a>
                     <a class="news-title" href="#">
                         В Крыму отреагировали
                         на слова Кравчука
@@ -134,7 +152,7 @@
                 </div>
             </section>
             <aside class="banner banner-first">
-                <img src="img/banner-1.png">
+                <img src="img/banner-1.png" alt="Рекламный баннер">
             </aside>
             <section class="small-card small-card-first">
                 <img src="./img/photo-1.jpg" alt="Фото к новости">
@@ -153,13 +171,13 @@
                     Дума увеличила пошлины
                     за выдачу загранпаспортов
                     и водительских прав
-                </p>
+                </a>
                 <a href="#" class="category">Общество</a>
                 <p class="time">12:33</p>
                 <p class="comments">36</p>
             </section>
             <aside class="banner banner-second">
-                <img src="img/banner-2.png">
+                <img src="img/banner-2.png" alt="Рекламный баннер">
             </aside>
             <section class="small-card small-card-fourth">
                 <img src="./img/photo-3.jpg" alt="Фото к новости">
@@ -183,24 +201,106 @@
                 <p class="time">11:39</p>
                 <p class="comments">25</p>
             </section>
-            <section class="big-card big-card-second">
-                <div class="card">
-                    <a class="category" href="#">Политика</p>
-                    <a class="news-title" href="#">
-                        Пекин обвинил Вашингтон
-                        развязывании торговой войны
-                    </a><br>
-                    <p class="date">19 июня 2018</p>
-                    <p class="time">10:48</p>
-                    <p class="description">
-                        Министерство коммерции Китая заявило, что Пекин примет «качественные»
-                        и «количественные» меры, если президент США Дональд Трамп введет
-                        дополнительные пошлины на китайские товары
-                    </p>
-                </div>
+            <div class="wrap-fix">  <!-- wrap-fix нужен для корректного отображения страницы в FireFox -->
+                <section class="big-card big-card-second">
+                    <div class="card">
+                        <a class="category" href="#">Политика</a>
+                        <a class="news-title" href="#">
+                            Пекин обвинил Вашингтон
+                            развязывании торговой войны
+                        </a><br>
+                        <p class="date">19 июня 2018</p>
+                        <p class="time">10:48</p>
+                        <p class="description">
+                            Министерство коммерции Китая заявило, что Пекин примет «качественные»
+                            и «количественные» меры, если президент США Дональд Трамп введет
+                            дополнительные пошлины на китайские товары
+                        </p>
+                    </div>
+                </section>
+                <section class="most-readable">
+                    <h1>Самые читаемые новости</h1>
+                    <div class="card">
+                        <a class="news-title" href="#">
+                            В Турции пообещали найти альтернативу из-за
+                            отказа США поставить F-35
+                        </a>
+                        <div class="card-footer">
+                            <a class="category" href="#">Политика</a>
+                            <p class="time">11:39</p>
+                            <p class="comments">25</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="news-title" href="#">
+                            Назван минимальный доход для причисления
+                            к среднему классу‍
+                        </a>
+                        <div class="card-footer">
+                            <a class="category" href="#">Политика</a>
+                            <p class="time">11:39</p>
+                            <p class="comments">25</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="news-title" href="#">
+                            Назван минимальный доход для причисления
+                            к среднему классу‍
+                        </a>
+                        <div class="card-footer">
+                            <a class="category" href="#">Политика</a>
+                            <p class="time">11:39</p>
+                            <p class="comments">25</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="currency">
+                
             </section>
         </div>
     </main>
-
+    <footer class="footer">
+        <div class="border-wrap">
+            <div class="wrapper footer-first-line clearfix">
+                <nav class="footer-nav">
+                    <a href="#">Главная</a>
+                    <a href="#">Политика</a>
+                    <a href="#">Общество</a>
+                    <a href="#">Экономика</a>
+                    <a href="#">В мире</a>
+                </nav>
+                <nav class="footer-nav">
+                    <a href="#">Путешествия</a>
+                    <a href="#">Спорт</a>
+                    <a href="#">Наука</a>
+                    <a href="#">Туризм</a>
+                </nav>
+                <div class="about-block">
+                    <img src="./img/logo-footer.png" alt="Логотип" class="logo-footer">
+                    <nav class="about-nav">
+                        <a href="#">Об агентстве</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">Опубликовать новость</a>
+                    </nav>
+                </div>
+                <div class="social-block">
+                    <div class="social-networks">
+                        <a href="#" class="social-link"><img src="./img/vk.png" alt=""></a>
+                        <a href="#" class="social-link"><img src="./img/fb.png" alt=""></a>
+                        <a href="#" class="social-link"><img src="./img/tw.png" alt=""></a>
+                        <a href="#" class="social-link"><img src="./img/inst.png" alt=""></a>
+                    </div>
+                    <div class="phone-mail">
+                        <a href="tel:+74999955555" class="phone">+7 (499) 995-55-55</a><br>
+                        <a href="mailto:info@agency.ru" class="mail">info@agency.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © Новостное агентство, 2017-2019 все права защищены
+        </div>
+    </footer>
 </body>
 </html>
