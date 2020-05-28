@@ -826,6 +826,10 @@ p {
         text-align: center;
     }
 
+    .big-block-first .big-block-content {
+        margin-top: 20%
+    }
+
     .big-block-second .news-card {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
@@ -838,5 +842,9 @@ p {
 @media (max-width: 420px) {
     .header .second-line-block .first-block .left-side-block .location {
         display: none;
+    }
+
+    .big-block-first .news-card-header {
+        font-size: 1.5rem;
     }
 }
