@@ -805,6 +805,11 @@ p {
         margin-bottom: 20px;
     }
 
+    .footer .column-center {
+        display: none;
+    }
+    
+
 }
 
 @media (max-width: 501px) {
